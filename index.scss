@@ -1,0 +1,239 @@
+@import "./scss/var";
+@import "./scss/reset";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: $container-space;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+// styles for txt 
+
+.h1 {
+  font-size: $fs-h1;
+  line-height: 80px;
+  color: $white;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: $fs-h2;
+}
+
+.h3 {
+  font-size: $fs-h3;
+}
+
+.h4 {
+  font-size: $fs-h4;
+  color: $white-2;
+}
+
+.txt--lg {
+  font-size: $fs-h4;
+  color: $white-2;
+}
+
+.txt--dark {
+  color: $black;
+}
+
+.txt--smbold {
+  font-weight: 500;
+}
+
+.txt--bold {
+  font-weight: 700;
+}
+
+.txt--poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.txt--center {
+  text-align: center;
+}
+
+// styles for header
+
+.logo-link {
+  display: inline-block;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link,
+.nav-opened {
+  font-size: $fs-sm;
+  color: $blue-dark;
+  font-weight: 600;
+  line-height: 28px;
+  margin-right: 50px;
+  transition: $transition-effect;
+  cursor: pointer;
+}
+
+.nav-link:hover,
+.nav-item:hover .nav-opened {
+  color: $orange;
+}
+
+.nav-arrow {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-bottom: 2px solid $blue-dark;
+  border-right: 2px solid $blue-dark;
+  transform: rotate(45deg);
+  margin-left: 6px;
+  margin-bottom: 4px;
+  transform-origin: center;
+  transition: $transition-effect;
+}
+
+.nav-item:hover .nav-arrow {
+  transform: rotate(225deg);
+  border-color: $orange;
+  margin-bottom: 0;
+}
+
+.nav-item:hover .nav-opened-list {
+  display: block;
+}
+
+.nav-opened-list {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: $white;
+  border: 1px solid $orange;
+  border-radius: 7px;
+  min-width: 214px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.nav-opened-item {
+  border-bottom: 1px solid $orange;
+}
+
+.nav-opened-item:last-child {
+  border-bottom: none;
+}
+
+.nav-opened-link {
+  display: block;
+  font-size: $fs-sm;
+  line-height: 28px;
+  padding: 10px 18px;
+  color: $blue-dark;
+  transition: $transition-effect;
+}
+
+.nav-opened-link:hover {
+  background-color: $orange;
+  color: $white;
+}
+
+// styles for main section
+
+.main-section {
+  background-image: url("../assets/img/food-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.main-section__title {
+  max-width: 939px;
+  padding-top: 17px;
+}
+
+.main-section__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 73px 0;
+}
+
+.main-section__txt {
+  padding-top: 25px;
+  font-weight: 500;
+}
+
+.main-section__btn {
+  margin-top: 54px;
+  max-width: 551px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  font-size: $fs-h4;
+  line-height: 36px;
+  color: $white;
+  padding: 16px 58px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: $transition-effect;
+}
+
+.btn--bordered {
+  border: 1px solid $white;
+}
+
+.btn--bordered:hover {
+  background-color: $orange;
+  border: 1px solid transparent;
+}
+
+.btn--orange {
+  background-color: $orange;
+  border: 1px solid transparent;
+}
+
+.btn--orange:hover {
+  background-color: transparent;
+  border: 1px solid $white;
+}
+
+.section-second__phone {
+  max-width: 548px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  bottom: 37px;
+}
+
+.img-phone:first-child {
+  position: absolute;
+  bottom: -23px;
+  left: -18px;
+}

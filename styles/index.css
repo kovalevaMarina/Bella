@@ -1,0 +1,411 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.h1 {
+  font-size: 58px;
+  line-height: 80px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: 44px;
+}
+
+.h3 {
+  font-size: 40px;
+}
+
+.h4 {
+  font-size: 24px;
+  color: #f7f7f7;
+}
+
+.txt--lg {
+  font-size: 24px;
+  color: #f7f7f7;
+}
+
+.txt--dark {
+  color: #000000;
+}
+
+.txt--smbold {
+  font-weight: 500;
+}
+
+.txt--bold {
+  font-weight: 700;
+}
+
+.txt--poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.txt--center {
+  text-align: center;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link,
+.nav-opened {
+  font-size: 16px;
+  color: #252b42;
+  font-weight: 600;
+  line-height: 28px;
+  margin-right: 50px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover,
+.nav-item:hover .nav-opened {
+  color: #fa4a0c;
+}
+
+.nav-arrow {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-bottom: 2px solid #252b42;
+  border-right: 2px solid #252b42;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 6px;
+  margin-bottom: 4px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover .nav-arrow {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  border-color: #fa4a0c;
+  margin-bottom: 0;
+}
+
+.nav-item:hover .nav-opened-list {
+  display: block;
+}
+
+.nav-opened-list {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #fa4a0c;
+  border-radius: 7px;
+  min-width: 214px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.nav-opened-item {
+  border-bottom: 1px solid #fa4a0c;
+}
+
+.nav-opened-item:last-child {
+  border-bottom: none;
+}
+
+.nav-opened-link {
+  display: block;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 10px 18px;
+  color: #252b42;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav-opened-link:hover {
+  background-color: #fa4a0c;
+  color: #ffffff;
+}
+
+.main-section {
+  background-image: url("../assets/img/food-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.main-section__title {
+  max-width: 939px;
+  padding-top: 17px;
+}
+
+.main-section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 73px 0;
+}
+
+.main-section__txt {
+  padding-top: 25px;
+  font-weight: 500;
+}
+
+.main-section__btn {
+  margin-top: 54px;
+  max-width: 551px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  padding: 16px 58px;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn--bordered {
+  border: 1px solid #ffffff;
+}
+
+.btn--bordered:hover {
+  background-color: #fa4a0c;
+  border: 1px solid transparent;
+}
+
+.btn--orange {
+  background-color: #fa4a0c;
+  border: 1px solid transparent;
+}
+
+.btn--orange:hover {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.section-second__phone {
+  max-width: 548px;
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  bottom: 37px;
+}
+
+.img-phone:first-child {
+  position: absolute;
+  bottom: -23px;
+  left: -18px;
+}

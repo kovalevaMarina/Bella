@@ -11,8 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <div class="main-wrap">
@@ -25,8 +28,8 @@
             <ul class="nav-list flex-container">
               <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
               <li class="nav-item">
-                <a class="nav-opened"
-                  >Product
+                <a class="nav-opened">
+                  Product
                   <span class="nav-arrow"></span>
                 </a>
                 <ul class="nav-opened-list">
@@ -49,6 +52,17 @@
                   >About
                   <span class="nav-arrow"></span>
                 </a>
+                <ul class="nav-opened-list">
+                  <li class="nav-opened-item">
+                    <a class="nav-opened-link" href="#">Company</a>
+                  </li>
+                  <li class="nav-opened-item">
+                    <a class="nav-opened-link" href="#">Our team</a>
+                  </li>
+                  <li class="nav-opened-item">
+                    <a class="nav-opened-link" href="#">Our clients</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -56,7 +70,41 @@
           </nav>
         </div>
       </header>
-      <main class="main-section"></main>
+      <main class="main-section">
+        <div class="container">
+          <div class="main-section__content">
+            <h4 class="h4 txt--bold">Food app</h4>
+            <h1 class="h1 main-section__title txt--poppins txt--center">
+              Why stay hungry when
+              <br />
+              you can order form Bella Onojie
+            </h1>
+            <p class="main-section__txt txt--lg">
+              Download the bella onoje’s food app now on
+            </p>
+            <div class="main-section__btn">
+              <button class="btn btn--orange txt--bold">Playstore</button>
+              <button class="btn btn--bordered txt--bold">App store</button>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
+    <section class="section-second">
+      <div class="container">
+        <div class="section-second__phone">
+          <img
+            class="img-phone"
+            src="./assets/img/phone_first.png"
+            alt="Изображение телефона с красной заставкой"
+          />
+          <img
+            class="img-phone"
+            src="./assets/img/phone_second.png"
+            alt="Изображение телефона с белой заставкой"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
