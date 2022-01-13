@@ -46,29 +46,31 @@ body {
   color: $white-2;
 }
 
-.txt--lg {
-  font-size: $fs-h4;
-  color: $white-2;
-}
+.txt {
+  &--lg {
+    font-size: $fs-h4;
+    color: $white-2;
+  }
 
-.txt--dark {
-  color: $black;
-}
+  &--dark {
+    color: $black;
+  }
 
-.txt--smbold {
-  font-weight: 500;
-}
+  &--smbold {
+    font-weight: 500;
+  }
 
-.txt--bold {
-  font-weight: 700;
-}
+  &--bold {
+    font-weight: 700;
+  }
 
-.txt--poppins {
-  font-family: "Poppins", sans-serif;
-}
+  &-poppins {
+    font-family: "Poppins", sans-serif;
+  }
 
-.txt--center {
-  text-align: center;
+  &--center {
+    text-align: center;
+  }
 }
 
 // styles for header
@@ -77,37 +79,39 @@ body {
   display: inline-block;
 }
 
-.nav-item {
-  position: relative;
-}
+.nav {
+  &-item {
+    position: relative;
+  }
 
-.nav-link,
-.nav-opened {
-  font-size: $fs-sm;
-  color: $blue-dark;
-  font-weight: 600;
-  line-height: 28px;
-  margin-right: 50px;
-  transition: $transition-effect;
-  cursor: pointer;
+  &-link,
+  &-opened {
+    font-size: $fs-sm;
+    color: $blue-dark;
+    font-weight: 600;
+    line-height: 28px;
+    margin-right: 50px;
+    transition: $transition-effect;
+    cursor: pointer;
+  }
+
+  &-arrow {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-bottom: 2px solid $blue-dark;
+    border-right: 2px solid $blue-dark;
+    transform: rotate(45deg);
+    margin-left: 6px;
+    margin-bottom: 4px;
+    transform-origin: center;
+    transition: $transition-effect;
+  }
 }
 
 .nav-link:hover,
 .nav-item:hover .nav-opened {
   color: $orange;
-}
-
-.nav-arrow {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  border-bottom: 2px solid $blue-dark;
-  border-right: 2px solid $blue-dark;
-  transform: rotate(45deg);
-  margin-left: 6px;
-  margin-bottom: 4px;
-  transform-origin: center;
-  transition: $transition-effect;
 }
 
 .nav-item:hover .nav-arrow {
@@ -164,32 +168,31 @@ body {
   display: flex;
   align-items: center;
   flex-grow: 1;
-}
+  &__title {
+    max-width: 939px;
+    padding-top: 17px;
+  }
 
-.main-section__title {
-  max-width: 939px;
-  padding-top: 17px;
-}
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 73px 0;
+  }
 
-.main-section__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 73px 0;
-}
+  &__txt {
+    padding-top: 25px;
+    font-weight: 500;
+  }
 
-.main-section__txt {
-  padding-top: 25px;
-  font-weight: 500;
-}
-
-.main-section__btn {
-  margin-top: 54px;
-  max-width: 551px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  &__btn {
+    margin-top: 54px;
+    max-width: 551px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .btn {
@@ -202,34 +205,41 @@ body {
   border-radius: 30px;
   cursor: pointer;
   transition: $transition-effect;
+  &--bordered {
+    border: 1px solid $white;
+    &:hover {
+      background-color: $orange;
+      border: 1px solid transparent;
+    }
+  }
+
+  &--orange {
+    background-color: $orange;
+    border: 1px solid transparent;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $white;
+    }
+  }
 }
 
-.btn--bordered {
-  border: 1px solid $white;
-}
+.section-second {
+  margin-bottom: 72px;
+  &__wrap {
+    max-width: 884px;
+    padding-bottom: 129px;
+    margin: 0 auto;
+    border-bottom: 1px solid $border-color;
+  }
 
-.btn--bordered:hover {
-  background-color: $orange;
-  border: 1px solid transparent;
-}
-
-.btn--orange {
-  background-color: $orange;
-  border: 1px solid transparent;
-}
-
-.btn--orange:hover {
-  background-color: transparent;
-  border: 1px solid $white;
-}
-
-.section-second__phone {
-  max-width: 548px;
-  position: relative;
-  margin: 0 auto;
-  display: flex;
-  justify-content: end;
-  bottom: 37px;
+  &__phone {
+    max-width: 584px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    bottom: 37px;
+  }
 }
 
 .img-phone:first-child {
