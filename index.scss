@@ -305,6 +305,7 @@ body {
   }
 
   &__item {
+    margin-bottom: 90px;
     &:nth-child(even) .works-img {
       margin-right: 100px;
     }
@@ -355,5 +356,32 @@ body {
 
   &__txt {
     line-height: 38px;
+  }
+}
+
+.footer {
+  &__wrap {
+    padding: 50px 0;
+  }
+
+  &-social {
+    &__item {
+      width: 40px;
+      height: 40px;
+      margin-right: 24px;
+    }
+
+    &__link {
+      display: block;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__txt {
+    font-size: 12px;
+    line-height: 18px;
+    color: $grey-2;
   }
 }
