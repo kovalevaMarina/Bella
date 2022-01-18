@@ -4,7 +4,10 @@ $black: #000000;
 $orange: #fa4a0c;
 $white: #ffffff;
 $white-2: #f7f7f7;
+$grey: #737373;
 $border-color: #e4e4e4;
+$txt-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$filter-shadow: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
 
 // text styles
 $fs-sm: 16px;
@@ -13,6 +16,9 @@ $fs-h1: 58px;
 $fs-h2: 44px;
 $fs-h3: 40px;
 $fs-h4: 24px;
-$container-space: 0 15px;
 
+$gd-col: 12;
+$gd-size: 100% /  $gd-col;
+
+$container-space: 0 15px;
 $transition-effect: all 0.3s ease;
