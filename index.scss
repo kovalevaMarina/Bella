@@ -26,6 +26,13 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  &--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .row {
@@ -77,6 +84,10 @@ body {
   &--lg {
     font-size: $fs-h4;
     color: $white-2;
+  }
+
+  &--white {
+    color: $white;
   }
 
   &--dark {
@@ -215,10 +226,6 @@ body {
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 146px 0;
   }
 
@@ -330,5 +337,23 @@ body {
       line-height: 38px;
       color: $grey;
     }
+  }
+}
+
+.download {
+  background-image: url('../assets/img/download_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__content {
+    padding: 130px 0;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__txt {
+    line-height: 38px;
   }
 }
